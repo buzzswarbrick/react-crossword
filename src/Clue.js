@@ -44,6 +44,7 @@ export default function Clue({
       highlight={
         focused && direction === selectedDirection && number === selectedNumber
       }
+      focused={focused}
       correct={correct}
       {...props}
       onClick={handleClick}
