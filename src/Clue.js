@@ -6,7 +6,7 @@ import styled, { ThemeContext } from 'styled-components';
 import { CrosswordContext } from './context';
 
 const ClueWrapper = styled.div.attrs((props) => ({
-  className: `clue${props.correct ? ' correct' : ''}`,
+  className: `clue${props.correct ? ' correct' : ''}${props.focused && ' focused'}`,
 }))`
   cursor: default;
   background-color: ${(props) =>
